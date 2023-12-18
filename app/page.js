@@ -2,6 +2,7 @@ import StyleGuide from "@/components/StyleGuide";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
+import Reservation from "@/components/Reservation";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Menu />
+      <Reservation />
       <div className="h-[4000px]"></div>
     </main>
   )
