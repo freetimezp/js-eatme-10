@@ -38,6 +38,10 @@
     label {
         @apply text-white text-sm uppercase font-normal block mb-2;
     }
+
+    .active {
+        @apply text-orange;
+    }
 }
 
 
