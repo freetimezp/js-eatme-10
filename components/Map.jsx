@@ -55,7 +55,7 @@ const Map = () => {
                 center={[34.052235, -118.243683]}
                 zoom={isMobile ? 10 : 12}
                 zoomControl={false}
-                className={`${isMobile ? 'h-[300px]' : 'h-[900px]'}  z-10`}
+                className={`${isMobile ? 'h-[300px]' : 'h-[600px]'}  z-10`}
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetmap</a> contributors'
