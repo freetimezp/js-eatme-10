@@ -1,11 +1,17 @@
-import StyleGuide from "@/components/StyleGuide";
+import dynamic from 'next/dynamic';
+
+//import StyleGuide from "@/components/StyleGuide";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import Reservation from "@/components/Reservation";
 import About from "@/components/About";
-import Map from "@/components/Map";
+//import Map from "@/components/Map";
 import Footer from "@/components/Footer";
+
+const DynamicMap = dynamic(() => import('../components/Map'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
@@ -16,7 +22,7 @@ export default function Home() {
       <Menu />
       <Reservation />
       <About />
-      <Map />
+      <DynamicMap />
       <Footer />
     </main>
   )
